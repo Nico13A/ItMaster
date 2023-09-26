@@ -1,2 +1,2 @@
 # ItMaster 
-## Subiendo algo.
+Subiendo archivos de práctica de ItMaster.
