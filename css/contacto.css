@@ -1,0 +1,46 @@
+.main {
+    width: 100%;
+}
+
+.form {
+    width: 50%;
+    margin: 20px auto;
+    max-width: 700px;
+    min-width: 360px;
+    padding: 20px;
+}
+.form-group {
+    margin: 0 auto 10px;
+}
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+.form-group input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.form-group textarea {
+    resize: none;
+    height: 200px;
+}
+.form-group .submit-button {
+    background-color: rgb(108, 246, 108);
+}
+.form-group .submit-button:hover {
+    background-color: rgb(59, 191, 59);
+    cursor: pointer;
+}
+
+@media (max-width: 576px) { 
+    .form {
+        min-width: auto;
+        width: 100%;
+    }
+}

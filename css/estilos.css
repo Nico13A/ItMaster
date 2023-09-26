@@ -1,0 +1,101 @@
+/* Estilos comunes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* NAVBAR */
+.navbar {
+    background-color: #333;
+    width: 100%;
+    height: 6.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;/* Esto lo puse para que no se tape por los productos. */
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    list-style: none;
+}
+.navbar__list-item a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.navbar__list-item a:hover {
+    color: #ff6d38;
+}
+.active {
+    border-bottom: 0.4rem solid #fff;
+}
+.navbar__list-item a.active:hover {
+    border-bottom: 0.4rem solid #ff6d38;
+}
+/* HEADER */
+.header {
+    margin-top: 6.25rem;
+    padding: 0.625rem;
+    background-color: #f4f4f4;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+.header__img {
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+.header__title {
+    text-align: center;
+}
+
+@media (max-width: 576px) { 
+    .navbar {
+        height: auto;
+        position: static;
+    }
+    .navbar__list {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .navbar__list-item {
+        width: 100%;
+        padding: 10px;
+    }
+    .navbar__list-item:not(:last-child) {
+        border-bottom: 1px solid #f4f4f4;
+    }
+
+    .active {
+        border-bottom: none;
+    }
+
+    .header {
+        margin-top: 0;
+        padding: 20px 0;
+        background-color: #f4f4f4;
+        height: auto;
+        width: 100%;
+    }
+    .header__img {
+        width: 50%;
+    }
+}

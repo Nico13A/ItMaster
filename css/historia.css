@@ -1,0 +1,15 @@
+.main {
+    padding: 10px;
+    margin: 15px 5%;
+}
+.main__section {
+    padding: 10px 0;
+}
+.main__section-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+.main__section-paragraph {
+    margin-bottom: 10px;
+}
